@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name SofleKeyboard-rescue)(type Legacy)(uri ${KIPRJMOD}/SofleKeyboard-rescue.lib)(options "")(descr ""))
-  (lib (name SofleKeyboard)(type Legacy)(uri ${KIPRJMOD}/SofleKeyboard.lib)(options "")(descr ""))
+  (lib (name "SofleKeyboard-rescue")(type "Legacy")(uri "${KIPRJMOD}/Sofle_Choc_v2.2-rescue.lib")(options "")(descr ""))
+  (lib (name "SofleKeyboard")(type "Legacy")(uri "${KIPRJMOD}/Sofle_Choc_v2.2.lib")(options "")(descr ""))
 )
