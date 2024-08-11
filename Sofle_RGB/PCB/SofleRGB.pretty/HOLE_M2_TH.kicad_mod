@@ -1,10 +1,76 @@
-(module SofleKeyboard-footprint:HOLE_M2_TH (layer F.Cu) (tedit 5F805C11)
-  (fp_text reference TH4 (at 0 -2.54) (layer F.SilkS) hide
-    (effects (font (size 0.29972 0.29972) (thickness 0.0762)))
-  )
-  (fp_text value HOLE (at 0 2.54) (layer F.SilkS) hide
-    (effects (font (size 0.29972 0.29972) (thickness 0.0762)))
-  )
-  (pad "" thru_hole circle (at -0.225 -0.275 90) (size 4.7 4.7) (drill 4.1) (layers *.Cu *.Mask Dwgs.User)
-    (clearance 0.3))
+(footprint "HOLE_M2_TH"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "TH4"
+		(at 0 -2.54 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "29f3e657-0b2b-475d-adfc-f1b7991ca344")
+		(effects
+			(font
+				(size 0.29972 0.29972)
+				(thickness 0.0762)
+			)
+		)
+	)
+	(property "Value" "HOLE"
+		(at 0 2.54 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2beb35c6-4ff7-4957-a53a-17763bc20258")
+		(effects
+			(font
+				(size 0.29972 0.29972)
+				(thickness 0.0762)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1903a14f-0f7c-4e5b-bb7b-cedbead8c080")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "944805c2-df0c-4e7d-96a4-a768b9e26dea")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d9650c09-87fb-46df-a913-67823b98ce2a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(pad "" thru_hole circle
+		(at 0 0 90)
+		(size 4.4 4.4)
+		(drill 4.1)
+		(layers "*.Cu" "*.Mask" "Dwgs.User")
+		(remove_unused_layers no)
+		(clearance 0.3)
+		(uuid "37235490-73e5-427b-a6ea-0228372f5549")
+	)
 )
