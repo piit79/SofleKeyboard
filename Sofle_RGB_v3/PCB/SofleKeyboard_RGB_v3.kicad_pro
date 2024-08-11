@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.0,
-          "width": 1.7
+          "height": 1.143,
+          "width": 0.635
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -59,7 +59,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|98700000|83550000|e32efda8-6bc4-430c-a375-7e738c15be2a|03de9a86-a4f9-4dba-b1db-308423cd93ee",
+        "clearance|98700000|89500000|5070714a-a03c-4b24-a7a7-257183df8254|98a85811-b795-4756-ae68-3fe212f5bcff",
+        "holes_co_located|89845000|75700000|642593f0-25cc-45ff-97df-382ecd0c98b8|08215d9a-1fd6-4436-b568-d72fbbc914f5",
+        "holes_co_located|89845000|78700000|ead627b6-4c1f-451e-8eb8-37da78e81ec0|e568da35-0ee5-4445-89de-c751542b8bfe"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -81,6 +86,7 @@
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "warning",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -126,7 +132,7 @@
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
@@ -536,7 +542,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "../../Gerbers/RGB_v3",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -547,6 +553,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
