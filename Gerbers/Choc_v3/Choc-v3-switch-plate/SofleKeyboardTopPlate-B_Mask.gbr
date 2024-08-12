@@ -1,0 +1,22 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,8.0.4-8.0.4-0~ubuntu24.04.1*%
+%TF.CreationDate,2024-08-12T14:45:40+02:00*%
+%TF.ProjectId,SofleKeyboardTopPlate,536f666c-654b-4657-9962-6f617264546f,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Soldermask,Bot*%
+%TF.FilePolarity,Negative*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 8.0.4-8.0.4-0~ubuntu24.04.1) date 2024-08-12 14:45:40*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10C,3.900000*%
+G04 APERTURE END LIST*
+D10*
+X206275000Y-66025000D03*
+X130725000Y-56950000D03*
+X206275000Y-104125000D03*
+X130675000Y-95050000D03*
+X103000000Y-119000000D03*
+M02*
