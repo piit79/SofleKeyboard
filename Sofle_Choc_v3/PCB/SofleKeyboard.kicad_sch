@@ -115,7 +115,152 @@
 				)
 			)
 		)
-		(symbol "Jumper:Jumper_3_Bridged12"
+		(symbol "Jumper:Jumper_2_Bridged"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Bridged"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, closed/bridged"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_2_Bridged_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_0_1"
+				(arc
+					(start 1.524 0.254)
+					(mid 0 0.762)
+					(end -1.524 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Jumper:Jumper_3_Open"
 			(pin_names
 				(offset 0) hide)
 			(exclude_from_sim yes)
@@ -129,7 +274,7 @@
 					)
 				)
 			)
-			(property "Value" "Jumper_3_Bridged12"
+			(property "Value" "Jumper_3_Open"
 				(at 0 2.794 0)
 				(effects
 					(font
@@ -155,7 +300,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Jumper, 3-pole, pins 1+2 closed/bridged"
+			(property "Description" "Jumper, 3-pole, both open"
 				(at 0 0 0)
 				(effects
 					(font
@@ -182,7 +327,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Jumper_3_Bridged12_0_0"
+			(symbol "Jumper_3_Open_0_0"
 				(circle
 					(center -3.302 0)
 					(radius 0.508)
@@ -217,11 +362,11 @@
 					)
 				)
 			)
-			(symbol "Jumper_3_Bridged12_0_1"
+			(symbol "Jumper_3_Open_0_1"
 				(arc
-					(start -0.254 0.508)
-					(mid -1.651 0.9912)
-					(end -3.048 0.508)
+					(start -0.254 1.016)
+					(mid -1.651 1.4992)
+					(end -3.048 1.016)
 					(stroke
 						(width 0)
 						(type default)
@@ -232,7 +377,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -1.27) (xy 0 -0.508)
+						(xy 0 -0.508) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -242,8 +387,20 @@
 						(type none)
 					)
 				)
+				(arc
+					(start 3.048 1.016)
+					(mid 1.651 1.4992)
+					(end 0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "Jumper_3_Bridged12_1_1"
+			(symbol "Jumper_3_Open_1_1"
 				(pin passive line
 					(at -6.35 0 0)
 					(length 2.54)
@@ -3308,6 +3465,12 @@
 		(uuid "2513bb6d-498d-40c0-9df3-53639f995df9")
 	)
 	(junction
+		(at 186.69 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d27764b-6652-4571-8095-cf1e0956c0fd")
+	)
+	(junction
 		(at 29.21 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3360,6 +3523,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "499348aa-b7f5-4ba1-924f-3c215aa7cb47")
+	)
+	(junction
+		(at 176.53 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b50d390-8256-42bc-bbc2-6cd797704de6")
 	)
 	(junction
 		(at 175.26 128.27)
@@ -3476,6 +3645,12 @@
 		(uuid "b5bcfcdc-bc25-4040-b11d-1122f7a4bff1")
 	)
 	(junction
+		(at 175.26 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b75b938b-f2b7-426e-bc3d-ca3301cadad5")
+	)
+	(junction
 		(at 175.26 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3542,6 +3717,12 @@
 		(uuid "dcae387b-708e-4ad6-9528-03b07e8b49c3")
 	)
 	(junction
+		(at 160.02 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd40d4ec-b8c1-4555-aa0a-0a4ddd05b483")
+	)
+	(junction
 		(at 215.9 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3602,7 +3783,7 @@
 		(uuid "9b3d633a-92bb-49a6-aab2-0b5ec5b4bb99")
 	)
 	(no_connect
-		(at 274.955 22.225)
+		(at 276.86 22.86)
 		(uuid "dd0e9605-e6fc-47e8-80dc-a84801b6ce8e")
 	)
 	(wire
@@ -3617,6 +3798,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 62.23) (xy 176.53 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0475b635-2e16-4326-acfb-73edd9e15806")
+	)
+	(wire
+		(pts
 			(xy 160.02 120.65) (xy 160.02 137.16)
 		)
 		(stroke
@@ -3624,16 +3815,6 @@
 			(type default)
 		)
 		(uuid "05ac9cd6-95e6-4d94-87df-f651c88a29ae")
-	)
-	(wire
-		(pts
-			(xy 175.26 149.86) (xy 175.26 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06c68fd3-6f08-4517-9fdb-fa69f013b620")
 	)
 	(wire
 		(pts
@@ -3647,7 +3828,17 @@
 	)
 	(wire
 		(pts
-			(xy 234.315 30.48) (xy 234.315 27.305)
+			(xy 166.37 54.61) (xy 166.37 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06f57049-d67b-4e2d-98de-03f1b7c6a86f")
+	)
+	(wire
+		(pts
+			(xy 236.22 31.75) (xy 236.22 27.94)
 		)
 		(stroke
 			(width 0)
@@ -3687,7 +3878,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.835 30.48) (xy 203.835 27.305)
+			(xy 205.74 31.75) (xy 205.74 27.94)
 		)
 		(stroke
 			(width 0)
@@ -3697,7 +3888,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.835 41.91) (xy 203.835 38.735)
+			(xy 205.74 43.18) (xy 205.74 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3717,7 +3908,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.835 53.34) (xy 203.835 50.165)
+			(xy 205.74 54.61) (xy 205.74 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3737,7 +3928,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.995 64.77) (xy 203.835 64.77)
+			(xy 215.9 66.04) (xy 205.74 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3747,7 +3938,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.785 73.025) (xy 186.69 73.025)
+			(xy 176.53 73.66) (xy 186.69 73.66)
 		)
 		(stroke
 			(width 0)
@@ -3757,7 +3948,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.235 27.305) (xy 229.235 30.48)
+			(xy 231.14 27.94) (xy 231.14 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3797,17 +3988,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 67.945) (xy 188.595 67.945)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1301ca52-b1dd-4444-8244-3fc86d2a6b88")
-	)
-	(wire
-		(pts
-			(xy 188.595 41.91) (xy 188.595 45.085)
+			(xy 190.5 43.18) (xy 190.5 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3827,16 +4008,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 132.08) (xy 83.82 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15e9ce09-a834-4127-81f6-72a57462754e")
-	)
-	(wire
-		(pts
 			(xy 51.9176 135.128) (xy 53.8226 135.128)
 		)
 		(stroke
@@ -3847,7 +4018,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.755 50.165) (xy 198.755 53.34)
+			(xy 200.66 50.8) (xy 200.66 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3887,7 +4058,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.955 45.085) (xy 274.955 41.91)
+			(xy 276.86 45.72) (xy 276.86 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3904,16 +4075,6 @@
 			(type default)
 		)
 		(uuid "1af69fd0-ec52-44a8-95d1-a44af8eaeebe")
-	)
-	(wire
-		(pts
-			(xy 160.02 153.67) (xy 161.29 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bdfca05-7dfe-4f65-a299-bfb41a92a901")
 	)
 	(wire
 		(pts
@@ -3977,7 +4138,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.995 33.655) (xy 213.995 30.48)
+			(xy 215.9 34.29) (xy 215.9 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3987,7 +4148,7 @@
 	)
 	(wire
 		(pts
-			(xy 244.475 64.77) (xy 234.315 64.77)
+			(xy 246.38 66.04) (xy 236.22 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4017,7 +4178,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.315 64.77) (xy 234.315 61.595)
+			(xy 236.22 66.04) (xy 236.22 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4027,7 +4188,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.995 30.48) (xy 203.835 30.48)
+			(xy 215.9 31.75) (xy 205.74 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4057,7 +4218,17 @@
 	)
 	(wire
 		(pts
-			(xy 219.075 41.91) (xy 219.075 45.085)
+			(xy 186.69 68.58) (xy 190.5 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ee8ca4e-1dd0-45d3-8a21-730618571be8")
+	)
+	(wire
+		(pts
+			(xy 220.98 43.18) (xy 220.98 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4097,7 +4268,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.755 41.91) (xy 188.595 41.91)
+			(xy 200.66 43.18) (xy 190.5 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4107,17 +4278,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 138.43) (xy 91.44 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "388b9606-2c8d-425d-9099-ba616f5c1a4e")
-	)
-	(wire
-		(pts
-			(xy 198.755 73.025) (xy 203.835 73.025)
+			(xy 200.66 73.66) (xy 205.74 73.66)
 		)
 		(stroke
 			(width 0)
@@ -4137,17 +4298,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.755 64.77) (xy 174.625 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bd2938a-c19d-4bba-a0a0-91944d7dfd95")
-	)
-	(wire
-		(pts
-			(xy 229.235 52.705) (xy 219.075 52.705)
+			(xy 231.14 53.34) (xy 220.98 53.34)
 		)
 		(stroke
 			(width 0)
@@ -4157,7 +4308,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.235 61.595) (xy 229.235 64.77)
+			(xy 231.14 62.23) (xy 231.14 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4177,7 +4328,7 @@
 	)
 	(wire
 		(pts
-			(xy 244.475 53.34) (xy 234.315 53.34)
+			(xy 246.38 54.61) (xy 236.22 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4197,7 +4348,7 @@
 	)
 	(wire
 		(pts
-			(xy 188.595 53.34) (xy 188.595 56.515)
+			(xy 190.5 54.61) (xy 190.5 57.15)
 		)
 		(stroke
 			(width 0)
@@ -4207,7 +4358,7 @@
 	)
 	(wire
 		(pts
-			(xy 249.555 30.48) (xy 249.555 33.655)
+			(xy 251.46 31.75) (xy 251.46 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4217,7 +4368,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.755 53.34) (xy 188.595 53.34)
+			(xy 200.66 54.61) (xy 190.5 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4237,6 +4388,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 130.81) (xy 88.9 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e112226-0c6f-4392-acce-ab6da009a9f4")
+	)
+	(wire
+		(pts
 			(xy 256.54 95.25) (xy 276.86 95.25)
 		)
 		(stroke
@@ -4244,16 +4405,6 @@
 			(type default)
 		)
 		(uuid "50e9aca4-a15a-4a7d-ab9d-348aac449d18")
-	)
-	(wire
-		(pts
-			(xy 186.69 73.025) (xy 186.69 67.945)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "516e57f8-3e33-47a9-afe6-950c3c999b4e")
 	)
 	(wire
 		(pts
@@ -4267,7 +4418,7 @@
 	)
 	(wire
 		(pts
-			(xy 249.555 53.34) (xy 249.555 56.515)
+			(xy 251.46 54.61) (xy 251.46 57.15)
 		)
 		(stroke
 			(width 0)
@@ -4297,7 +4448,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 22.225) (xy 188.595 22.225)
+			(xy 184.15 22.86) (xy 190.5 22.86)
 		)
 		(stroke
 			(width 0)
@@ -4317,7 +4468,7 @@
 	)
 	(wire
 		(pts
-			(xy 244.475 56.515) (xy 244.475 53.34)
+			(xy 246.38 57.15) (xy 246.38 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4347,7 +4498,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.235 30.48) (xy 219.075 30.48)
+			(xy 231.14 31.75) (xy 220.98 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4357,7 +4508,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.795 41.91) (xy 264.795 38.735)
+			(xy 266.7 43.18) (xy 266.7 39.37)
 		)
 		(stroke
 			(width 0)
@@ -4377,7 +4528,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.715 53.34) (xy 249.555 53.34)
+			(xy 261.62 54.61) (xy 251.46 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4397,7 +4548,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.715 61.595) (xy 264.795 61.595)
+			(xy 261.62 62.23) (xy 266.7 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4447,7 +4598,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.755 38.735) (xy 198.755 41.91)
+			(xy 200.66 39.37) (xy 200.66 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4457,7 +4608,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.995 41.91) (xy 203.835 41.91)
+			(xy 215.9 43.18) (xy 205.74 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4467,7 +4618,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.715 38.735) (xy 259.715 41.91)
+			(xy 261.62 39.37) (xy 261.62 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4487,7 +4638,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.235 41.91) (xy 219.075 41.91)
+			(xy 231.14 43.18) (xy 220.98 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4497,7 +4648,7 @@
 	)
 	(wire
 		(pts
-			(xy 249.555 41.91) (xy 249.555 45.085)
+			(xy 251.46 43.18) (xy 251.46 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4507,7 +4658,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.075 64.77) (xy 219.075 67.945)
+			(xy 220.98 66.04) (xy 220.98 68.58)
 		)
 		(stroke
 			(width 0)
@@ -4557,7 +4708,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.955 53.34) (xy 264.795 53.34)
+			(xy 276.86 54.61) (xy 266.7 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4567,7 +4718,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.235 73.025) (xy 234.315 73.025)
+			(xy 231.14 73.66) (xy 236.22 73.66)
 		)
 		(stroke
 			(width 0)
@@ -4577,7 +4728,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.995 45.085) (xy 213.995 41.91)
+			(xy 215.9 45.72) (xy 215.9 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4594,16 +4745,6 @@
 			(type default)
 		)
 		(uuid "73b9f4ec-55b3-4093-b229-2b518459d3fa")
-	)
-	(wire
-		(pts
-			(xy 87.63 144.78) (xy 83.82 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73e2d37a-12bc-4fec-8fe2-6002913c18f0")
 	)
 	(wire
 		(pts
@@ -4647,7 +4788,7 @@
 	)
 	(wire
 		(pts
-			(xy 174.625 64.77) (xy 174.625 67.945)
+			(xy 166.37 66.04) (xy 166.37 68.58)
 		)
 		(stroke
 			(width 0)
@@ -4657,7 +4798,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.075 30.48) (xy 219.075 33.655)
+			(xy 220.98 31.75) (xy 220.98 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4674,6 +4815,16 @@
 			(type default)
 		)
 		(uuid "77b858e5-708b-42de-8a73-0417f75761c1")
+	)
+	(wire
+		(pts
+			(xy 110.49 143.51) (xy 114.3 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7938274f-ea74-4405-99a4-ec516ed2c4e8")
 	)
 	(wire
 		(pts
@@ -4697,7 +4848,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.835 64.77) (xy 203.835 61.595)
+			(xy 205.74 66.04) (xy 205.74 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4717,7 +4868,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.715 30.48) (xy 249.555 30.48)
+			(xy 261.62 31.75) (xy 251.46 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4737,7 +4888,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.995 67.945) (xy 213.995 64.77)
+			(xy 215.9 68.58) (xy 215.9 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4787,7 +4938,7 @@
 	)
 	(wire
 		(pts
-			(xy 244.475 33.655) (xy 244.475 30.48)
+			(xy 246.38 34.29) (xy 246.38 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4807,6 +4958,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 66.04) (xy 166.37 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "880a5009-898a-4152-82c7-3a425d18dcf5")
+	)
+	(wire
+		(pts
 			(xy 26.67 101.6) (xy 30.48 101.6)
 		)
 		(stroke
@@ -4817,7 +4978,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.955 41.91) (xy 264.795 41.91)
+			(xy 276.86 43.18) (xy 266.7 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4827,7 +4988,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.955 33.655) (xy 274.955 30.48)
+			(xy 276.86 34.29) (xy 276.86 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4897,7 +5058,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.995 22.225) (xy 219.075 22.225)
+			(xy 215.9 22.86) (xy 220.98 22.86)
 		)
 		(stroke
 			(width 0)
@@ -4907,7 +5068,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.235 38.735) (xy 229.235 41.91)
+			(xy 231.14 39.37) (xy 231.14 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4917,7 +5078,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.315 41.91) (xy 234.315 38.735)
+			(xy 236.22 43.18) (xy 236.22 39.37)
 		)
 		(stroke
 			(width 0)
@@ -4927,13 +5088,23 @@
 	)
 	(wire
 		(pts
-			(xy 244.475 30.48) (xy 234.315 30.48)
+			(xy 246.38 31.75) (xy 236.22 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "97945729-d37d-4c61-a260-eace51d53e89")
+	)
+	(wire
+		(pts
+			(xy 85.09 143.51) (xy 88.9 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97cae76e-23dd-4539-85e4-1099a3a96d96")
 	)
 	(wire
 		(pts
@@ -4947,7 +5118,17 @@
 	)
 	(wire
 		(pts
-			(xy 264.795 53.34) (xy 264.795 50.165)
+			(xy 186.69 66.04) (xy 200.66 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a9f3b93-2e57-4694-820e-291aab5cd22c")
+	)
+	(wire
+		(pts
+			(xy 266.7 54.61) (xy 266.7 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4987,13 +5168,33 @@
 	)
 	(wire
 		(pts
-			(xy 219.075 52.705) (xy 219.075 56.515)
+			(xy 160.02 157.48) (xy 160.02 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a10fac93-174a-4a9e-9b06-dc2472bc11e1")
+	)
+	(wire
+		(pts
+			(xy 220.98 53.34) (xy 220.98 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a20256a0-88bb-4c18-a413-e02ced8fa713")
+	)
+	(wire
+		(pts
+			(xy 186.69 54.61) (xy 186.69 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2b47d6e-9dd3-4c65-918d-8c4cac417d99")
 	)
 	(wire
 		(pts
@@ -5047,7 +5248,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.715 50.165) (xy 259.715 53.34)
+			(xy 261.62 50.8) (xy 261.62 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5057,7 +5258,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.715 41.91) (xy 249.555 41.91)
+			(xy 261.62 43.18) (xy 251.46 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5077,6 +5278,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 147.32) (xy 175.26 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7916427-c74e-46ee-b52d-7af9b22594fa")
+	)
+	(wire
+		(pts
 			(xy 256.54 144.78) (xy 276.86 144.78)
 		)
 		(stroke
@@ -5087,7 +5298,7 @@
 	)
 	(wire
 		(pts
-			(xy 188.595 29.845) (xy 188.595 33.655)
+			(xy 190.5 30.48) (xy 190.5 34.29)
 		)
 		(stroke
 			(width 0)
@@ -5107,7 +5318,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.955 56.515) (xy 274.955 53.34)
+			(xy 276.86 57.15) (xy 276.86 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5127,7 +5338,17 @@
 	)
 	(wire
 		(pts
-			(xy 259.715 27.305) (xy 259.715 30.48)
+			(xy 160.02 157.48) (xy 162.56 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c137d5bd-71cc-44ae-9fe7-33f83d2d54f1")
+	)
+	(wire
+		(pts
+			(xy 261.62 27.94) (xy 261.62 31.75)
 		)
 		(stroke
 			(width 0)
@@ -5167,7 +5388,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.795 30.48) (xy 264.795 27.305)
+			(xy 266.7 31.75) (xy 266.7 27.94)
 		)
 		(stroke
 			(width 0)
@@ -5177,7 +5398,7 @@
 	)
 	(wire
 		(pts
-			(xy 244.475 41.91) (xy 234.315 41.91)
+			(xy 246.38 43.18) (xy 236.22 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5197,7 +5418,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.995 53.34) (xy 203.835 53.34)
+			(xy 215.9 54.61) (xy 205.74 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5237,7 +5458,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.755 27.305) (xy 198.755 29.845)
+			(xy 200.66 27.94) (xy 200.66 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5267,7 +5488,17 @@
 	)
 	(wire
 		(pts
-			(xy 244.475 45.085) (xy 244.475 41.91)
+			(xy 110.49 130.81) (xy 114.3 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1666d9b-a70d-4cc0-afab-b5fe039d028a")
+	)
+	(wire
+		(pts
+			(xy 246.38 45.72) (xy 246.38 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5287,7 +5518,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.235 64.77) (xy 219.075 64.77)
+			(xy 231.14 66.04) (xy 220.98 66.04)
 		)
 		(stroke
 			(width 0)
@@ -5297,7 +5528,17 @@
 	)
 	(wire
 		(pts
-			(xy 244.475 22.225) (xy 249.555 22.225)
+			(xy 186.69 73.66) (xy 186.69 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7654a1a-c6aa-4247-8b3b-46ef914acf7c")
+	)
+	(wire
+		(pts
+			(xy 246.38 22.86) (xy 251.46 22.86)
 		)
 		(stroke
 			(width 0)
@@ -5307,7 +5548,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.955 30.48) (xy 264.795 30.48)
+			(xy 276.86 31.75) (xy 266.7 31.75)
 		)
 		(stroke
 			(width 0)
@@ -5327,7 +5568,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.235 50.165) (xy 229.235 52.705)
+			(xy 231.14 50.8) (xy 231.14 53.34)
 		)
 		(stroke
 			(width 0)
@@ -5337,7 +5578,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.755 61.595) (xy 198.755 64.77)
+			(xy 200.66 62.23) (xy 200.66 66.04)
 		)
 		(stroke
 			(width 0)
@@ -5377,7 +5618,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.315 53.34) (xy 234.315 50.165)
+			(xy 236.22 54.61) (xy 236.22 50.8)
 		)
 		(stroke
 			(width 0)
@@ -5437,13 +5678,23 @@
 	)
 	(wire
 		(pts
-			(xy 244.475 67.945) (xy 244.475 64.77)
+			(xy 246.38 68.58) (xy 246.38 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ed521aee-ff1b-4b1f-a709-3c3f85ee625b")
+	)
+	(wire
+		(pts
+			(xy 166.37 54.61) (xy 186.69 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eda7e9db-031d-4792-8c3c-220a149a4f8d")
 	)
 	(wire
 		(pts
@@ -5467,6 +5718,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 147.32) (xy 175.26 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8e1496f-5e01-4661-82b6-db36eb34ac60")
+	)
+	(wire
+		(pts
 			(xy 55.88 168.275) (xy 63.5 168.275)
 		)
 		(stroke
@@ -5477,7 +5738,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.995 56.515) (xy 213.995 53.34)
+			(xy 215.9 57.15) (xy 215.9 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5497,7 +5758,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.755 29.845) (xy 188.595 29.845)
+			(xy 200.66 30.48) (xy 190.5 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5725,7 +5986,7 @@
 	)
 	(global_label "CS{slash}LED"
 		(shape input)
-		(at 83.82 132.08 180)
+		(at 85.09 130.81 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5735,7 +5996,7 @@
 		)
 		(uuid "28eff0b7-763f-4f78-a456-697cddc69057")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.2319 132.08 0)
+			(at 75.5019 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5791,7 +6052,7 @@
 	)
 	(global_label "SW25B"
 		(shape input)
-		(at 175.26 149.86 180)
+		(at 172.72 147.32 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5801,7 +6062,7 @@
 		)
 		(uuid "362054f6-91cc-4fad-b797-99c36f98f033")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 166.5791 149.86 0)
+			(at 164.0391 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6009,7 +6270,7 @@
 	)
 	(global_label "SW25A"
 		(shape input)
-		(at 161.29 153.67 0)
+		(at 162.56 157.48 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6019,7 +6280,7 @@
 		)
 		(uuid "5e024509-ad58-4c83-9f4b-f02d2753ecc4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 169.7895 153.67 0)
+			(at 171.0595 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6226,7 +6487,7 @@
 	)
 	(global_label "LED"
 		(shape input)
-		(at 95.25 138.43 0)
+		(at 92.71 137.16 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6236,7 +6497,7 @@
 		)
 		(uuid "82157124-fba0-47e1-8535-760e2923922d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 101.0281 138.43 0)
+			(at 98.4881 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6312,6 +6573,28 @@
 			)
 		)
 	)
+	(global_label "LED2"
+		(shape input)
+		(at 110.49 143.51 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8c7660f5-26b4-41e9-99af-ed533ce80ab8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 103.5024 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "row1"
 		(shape input)
 		(at 27.94 41.91 180)
@@ -6380,7 +6663,7 @@
 	)
 	(global_label "LED"
 		(shape input)
-		(at 182.88 22.225 180)
+		(at 184.15 22.86 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6390,7 +6673,7 @@
 		)
 		(uuid "a13f92fa-1b58-4070-ace2-7c9e2ff3fbcc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 177.1019 22.225 0)
+			(at 178.3719 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6424,7 +6707,7 @@
 	)
 	(global_label "LED2"
 		(shape input)
-		(at 83.82 144.78 180)
+		(at 85.09 143.51 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6434,7 +6717,29 @@
 		)
 		(uuid "b2b2244d-779d-4776-b858-55b0a2f075f9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.8324 144.78 0)
+			(at 78.1024 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CS{slash}LED"
+		(shape input)
+		(at 110.49 130.81 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b64c4152-b681-4519-aa4f-7edf73a43996")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.9019 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6706,6 +7011,28 @@
 			)
 		)
 	)
+	(global_label "LED"
+		(shape input)
+		(at 118.11 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f7a66866-cc25-401c-8fbf-bb357f47171e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.8881 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SCL"
 		(shape input)
 		(at 79.248 103.632 0)
@@ -6752,7 +7079,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SofleChoc:ProMicro"
+		(property "Footprint" "SofleChoc:ProMicro_with_cutouts"
 			(at 46.99 62.23 0)
 			(effects
 				(font
@@ -6885,7 +7212,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 187.96 153.67 0)
 			(effects
 				(font
@@ -6964,7 +7291,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 167.64 87.63 0)
 			(effects
 				(font
@@ -7044,7 +7371,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 175.26 91.44 0)
 			(effects
 				(font
@@ -7112,7 +7439,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 187.96 87.63 0)
 			(effects
 				(font
@@ -7192,7 +7519,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 195.58 91.44 0)
 			(effects
 				(font
@@ -7260,7 +7587,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 208.28 87.63 0)
 			(effects
 				(font
@@ -7340,7 +7667,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 215.9 91.44 0)
 			(effects
 				(font
@@ -7408,7 +7735,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 228.6 87.63 0)
 			(effects
 				(font
@@ -7488,7 +7815,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 236.22 91.44 0)
 			(effects
 				(font
@@ -7556,7 +7883,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 248.92 87.63 0)
 			(effects
 				(font
@@ -7636,7 +7963,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 256.54 91.44 0)
 			(effects
 				(font
@@ -7704,7 +8031,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 269.24 87.63 0)
 			(effects
 				(font
@@ -7784,7 +8111,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 276.86 91.44 0)
 			(effects
 				(font
@@ -7852,7 +8179,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 187.96 104.14 0)
 			(effects
 				(font
@@ -7931,7 +8258,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 208.28 104.14 0)
 			(effects
 				(font
@@ -8010,7 +8337,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 228.6 104.14 0)
 			(effects
 				(font
@@ -8089,7 +8416,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 248.92 104.14 0)
 			(effects
 				(font
@@ -8168,7 +8495,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 269.24 104.14 0)
 			(effects
 				(font
@@ -8247,7 +8574,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 167.64 104.14 0)
 			(effects
 				(font
@@ -8327,7 +8654,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 175.26 107.95 0)
 			(effects
 				(font
@@ -8396,7 +8723,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 195.58 107.95 0)
 			(effects
 				(font
@@ -8465,7 +8792,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 215.9 107.95 0)
 			(effects
 				(font
@@ -8534,7 +8861,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 236.22 107.95 0)
 			(effects
 				(font
@@ -8603,7 +8930,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 256.54 107.95 0)
 			(effects
 				(font
@@ -8672,7 +8999,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 276.86 107.95 0)
 			(effects
 				(font
@@ -8740,7 +9067,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 167.64 120.65 0)
 			(effects
 				(font
@@ -8819,7 +9146,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 187.96 120.65 0)
 			(effects
 				(font
@@ -8898,7 +9225,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 208.28 120.65 0)
 			(effects
 				(font
@@ -8977,7 +9304,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 228.6 120.65 0)
 			(effects
 				(font
@@ -9056,7 +9383,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 248.92 120.65 0)
 			(effects
 				(font
@@ -9135,7 +9462,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 269.24 120.65 0)
 			(effects
 				(font
@@ -9215,7 +9542,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 175.26 124.46 0)
 			(effects
 				(font
@@ -9284,7 +9611,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 195.58 124.46 0)
 			(effects
 				(font
@@ -9353,7 +9680,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 215.9 124.46 0)
 			(effects
 				(font
@@ -9422,7 +9749,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 236.22 124.46 0)
 			(effects
 				(font
@@ -9491,7 +9818,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 256.54 124.46 0)
 			(effects
 				(font
@@ -9560,7 +9887,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 276.86 124.46 0)
 			(effects
 				(font
@@ -9628,7 +9955,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 208.28 137.16 0)
 			(effects
 				(font
@@ -9707,7 +10034,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 228.6 137.16 0)
 			(effects
 				(font
@@ -9786,7 +10113,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 248.92 137.16 0)
 			(effects
 				(font
@@ -9865,7 +10192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 269.24 137.16 0)
 			(effects
 				(font
@@ -9944,7 +10271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 187.96 137.16 0)
 			(effects
 				(font
@@ -10023,7 +10350,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 167.64 137.16 0)
 			(effects
 				(font
@@ -10103,7 +10430,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 175.26 140.97 0)
 			(effects
 				(font
@@ -10172,7 +10499,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 195.58 140.97 0)
 			(effects
 				(font
@@ -10241,7 +10568,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 215.9 140.97 0)
 			(effects
 				(font
@@ -10310,7 +10637,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 236.22 140.97 0)
 			(effects
 				(font
@@ -10379,7 +10706,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 256.54 140.97 0)
 			(effects
 				(font
@@ -10448,7 +10775,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 276.86 140.97 0)
 			(effects
 				(font
@@ -10516,7 +10843,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 208.28 153.67 0)
 			(effects
 				(font
@@ -10595,7 +10922,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 228.6 153.67 0)
 			(effects
 				(font
@@ -10674,7 +11001,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 248.92 153.67 0)
 			(effects
 				(font
@@ -10754,7 +11081,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 175.26 157.48 0)
 			(effects
 				(font
@@ -10823,7 +11150,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 195.58 157.48 0)
 			(effects
 				(font
@@ -10892,7 +11219,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 215.9 157.48 0)
 			(effects
 				(font
@@ -10961,7 +11288,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 236.22 157.48 0)
 			(effects
 				(font
@@ -11030,7 +11357,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 256.54 157.48 0)
 			(effects
 				(font
@@ -11162,7 +11489,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SofleChoc:MJ-4PP-9"
+		(property "Footprint" "SofleChoc:PJ-320A_double_sided_with_cutouts"
 			(at 29.21 82.55 0)
 			(effects
 				(font
@@ -12109,7 +12436,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SofleChoc:TACT_SWITCH_TVBP06"
+		(property "Footprint" "SofleChoc:TACT_SWITCH_TVBP06_with_cutouts"
 			(at 26.67 62.23 0)
 			(effects
 				(font
@@ -12306,7 +12633,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SofleChoc:OLED_4Pin"
+		(property "Footprint" "SofleChoc:OLED_4Pin_with_cutouts"
 			(at 20.32 100.33 0)
 			(effects
 				(font
@@ -13187,7 +13514,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
 			(at 269.24 153.67 0)
 			(effects
 				(font
@@ -13267,7 +13594,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SofleChoc:crkbd-diode"
+		(property "Footprint" "SofleChoc:SOD-123_with_cutout"
 			(at 276.86 157.48 0)
 			(effects
 				(font
@@ -13318,7 +13645,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005da04574")
-		(property "Reference" "SW25"
+		(property "Reference" "SWE25"
 			(at 48.26 156.4132 0)
 			(effects
 				(font
@@ -13379,7 +13706,7 @@
 		(instances
 			(project "SofleKeyboard"
 				(path "/46c21927-1b41-44f4-a5c5-3120e2caa955"
-					(reference "SW25")
+					(reference "SWE25")
 					(unit 1)
 				)
 			)
@@ -13452,7 +13779,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 193.675 24.765 0)
+		(at 195.58 25.4 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -13461,7 +13788,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f749fcb")
 		(property "Reference" "SW1"
-			(at 193.675 24.765 0)
+			(at 195.58 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13469,7 +13796,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 193.675 17.8054 0)
+			(at 195.58 18.4404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13477,8 +13804,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 193.675 18.415 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 195.58 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13487,7 +13814,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.675 18.415 0)
+			(at 195.58 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13496,7 +13823,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 193.675 24.765 0)
+			(at 195.58 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13533,7 +13860,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 208.915 24.765 180)
+		(at 210.82 25.4 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13541,7 +13868,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f74dc46")
 		(property "Reference" "SW2"
-			(at 208.915 24.765 0)
+			(at 210.82 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13549,7 +13876,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 208.915 31.7246 0)
+			(at 210.82 32.3596 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13557,8 +13884,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 208.915 31.115 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 210.82 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13567,7 +13894,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.915 31.115 0)
+			(at 210.82 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13576,7 +13903,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 208.915 24.765 0)
+			(at 210.82 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13613,7 +13940,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 224.155 24.765 0)
+		(at 226.06 25.4 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -13622,7 +13949,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f74ea54")
 		(property "Reference" "SW3"
-			(at 224.155 24.765 0)
+			(at 226.06 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13630,7 +13957,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 224.155 17.8054 0)
+			(at 226.06 18.4404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13638,8 +13965,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 224.155 18.415 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 226.06 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13648,7 +13975,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.155 18.415 0)
+			(at 226.06 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13657,7 +13984,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 224.155 24.765 0)
+			(at 226.06 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13694,7 +14021,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 239.395 24.765 180)
+		(at 241.3 25.4 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13702,7 +14029,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f74fbcc")
 		(property "Reference" "SW4"
-			(at 239.395 24.765 0)
+			(at 241.3 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13710,7 +14037,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 239.395 31.7246 0)
+			(at 241.3 32.3596 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13718,8 +14045,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 239.395 31.115 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 241.3 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13728,7 +14055,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 239.395 31.115 0)
+			(at 241.3 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13737,7 +14064,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 239.395 24.765 0)
+			(at 241.3 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13774,7 +14101,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 254.635 24.765 0)
+		(at 256.54 25.4 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -13783,7 +14110,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f751b72")
 		(property "Reference" "SW5"
-			(at 254.635 24.765 0)
+			(at 256.54 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13791,7 +14118,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 254.635 17.8054 0)
+			(at 256.54 18.4404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13799,8 +14126,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 254.635 18.415 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 256.54 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13809,7 +14136,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254.635 18.415 0)
+			(at 256.54 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13818,7 +14145,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 254.635 24.765 0)
+			(at 256.54 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13855,7 +14182,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 269.875 24.765 180)
+		(at 271.78 25.4 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13863,7 +14190,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f752ab9")
 		(property "Reference" "SW6"
-			(at 269.875 24.765 0)
+			(at 271.78 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13871,7 +14198,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 269.875 31.7246 0)
+			(at 271.78 32.3596 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13879,8 +14206,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 269.875 31.115 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 271.78 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13889,7 +14216,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 269.875 31.115 0)
+			(at 271.78 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13898,7 +14225,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 269.875 24.765 0)
+			(at 271.78 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13935,7 +14262,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 193.675 36.195 0)
+		(at 195.58 36.83 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -13944,7 +14271,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f754917")
 		(property "Reference" "SW7"
-			(at 193.675 35.56 0)
+			(at 195.58 36.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13952,7 +14279,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 193.675 29.2354 0)
+			(at 195.58 29.8704 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13960,8 +14287,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 193.675 29.845 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 195.58 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13970,7 +14297,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.675 29.845 0)
+			(at 195.58 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13979,7 +14306,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 193.675 36.195 0)
+			(at 195.58 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14016,7 +14343,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 208.915 36.195 180)
+		(at 210.82 36.83 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14024,7 +14351,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f755bec")
 		(property "Reference" "SW8"
-			(at 208.915 36.195 0)
+			(at 210.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14032,7 +14359,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 208.915 43.1546 0)
+			(at 210.82 43.7896 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14040,8 +14367,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 208.915 42.545 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 210.82 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14050,7 +14377,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.915 42.545 0)
+			(at 210.82 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14059,7 +14386,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 208.915 36.195 0)
+			(at 210.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14096,7 +14423,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 224.155 36.195 0)
+		(at 226.06 36.83 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -14105,7 +14432,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f756ce6")
 		(property "Reference" "SW9"
-			(at 224.155 36.195 0)
+			(at 226.06 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14113,7 +14440,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 224.155 29.2354 0)
+			(at 226.06 29.8704 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14121,8 +14448,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 224.155 29.845 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 226.06 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14131,7 +14458,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.155 29.845 0)
+			(at 226.06 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14140,7 +14467,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 224.155 36.195 0)
+			(at 226.06 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14177,7 +14504,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 239.395 36.195 180)
+		(at 241.3 36.83 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14185,7 +14512,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f757ed7")
 		(property "Reference" "SW10"
-			(at 239.395 36.195 0)
+			(at 241.3 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14193,7 +14520,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 239.395 43.1546 0)
+			(at 241.3 43.7896 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14201,8 +14528,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 239.395 42.545 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 241.3 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14211,7 +14538,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 239.395 42.545 0)
+			(at 241.3 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14220,7 +14547,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 239.395 36.195 0)
+			(at 241.3 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14257,7 +14584,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 254.635 36.195 0)
+		(at 256.54 36.83 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -14266,7 +14593,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f758f15")
 		(property "Reference" "SW11"
-			(at 254.635 36.195 0)
+			(at 256.54 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14274,7 +14601,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 254.635 29.2354 0)
+			(at 256.54 29.8704 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14282,8 +14609,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 254.635 29.845 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 256.54 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14292,7 +14619,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254.635 29.845 0)
+			(at 256.54 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14301,7 +14628,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 254.635 36.195 0)
+			(at 256.54 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14338,7 +14665,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 269.875 36.195 180)
+		(at 271.78 36.83 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14346,7 +14673,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f75a082")
 		(property "Reference" "SW12"
-			(at 269.875 36.195 0)
+			(at 271.78 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14354,7 +14681,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 269.875 43.1546 0)
+			(at 271.78 43.7896 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14362,8 +14689,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 269.875 42.545 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 271.78 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14372,7 +14699,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 269.875 42.545 0)
+			(at 271.78 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14381,7 +14708,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 269.875 36.195 0)
+			(at 271.78 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14418,7 +14745,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 269.875 59.055 180)
+		(at 271.78 59.69 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14426,7 +14753,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d0171")
 		(property "Reference" "SW24"
-			(at 269.875 59.055 0)
+			(at 271.78 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14434,7 +14761,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 269.875 66.0146 0)
+			(at 271.78 66.6496 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14442,8 +14769,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 269.875 65.405 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 271.78 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14452,7 +14779,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 269.875 65.405 0)
+			(at 271.78 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14461,7 +14788,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 269.875 59.055 0)
+			(at 271.78 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14498,7 +14825,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 254.635 59.055 0)
+		(at 256.54 59.69 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -14507,7 +14834,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d0177")
 		(property "Reference" "SW23"
-			(at 254.635 59.055 0)
+			(at 256.54 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14515,7 +14842,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 254.635 52.0954 0)
+			(at 256.54 52.7304 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14523,8 +14850,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 254.635 52.705 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 256.54 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14533,7 +14860,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254.635 52.705 0)
+			(at 256.54 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14542,7 +14869,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 254.635 59.055 0)
+			(at 256.54 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14579,7 +14906,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 239.395 59.055 180)
+		(at 241.3 59.69 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14587,7 +14914,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d017d")
 		(property "Reference" "SW22"
-			(at 239.395 59.055 0)
+			(at 241.3 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14595,7 +14922,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 239.395 66.0146 0)
+			(at 241.3 66.6496 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14603,8 +14930,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 239.395 65.405 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 241.3 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14613,7 +14940,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 239.395 65.405 0)
+			(at 241.3 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14622,7 +14949,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 239.395 59.055 0)
+			(at 241.3 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14659,7 +14986,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 224.155 59.055 0)
+		(at 226.06 59.69 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -14668,7 +14995,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d0183")
 		(property "Reference" "SW21"
-			(at 224.155 59.055 0)
+			(at 226.06 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14676,7 +15003,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 224.155 52.0954 0)
+			(at 226.06 52.7304 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14684,8 +15011,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 224.155 52.705 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 226.06 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14694,7 +15021,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.155 52.705 0)
+			(at 226.06 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14703,7 +15030,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 224.155 59.055 0)
+			(at 226.06 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14740,7 +15067,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 208.915 59.055 180)
+		(at 210.82 59.69 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14748,7 +15075,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d0189")
 		(property "Reference" "SW20"
-			(at 208.915 59.055 0)
+			(at 210.82 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14756,7 +15083,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 208.915 66.0146 0)
+			(at 210.82 66.6496 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14764,8 +15091,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 208.915 65.405 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 210.82 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14774,7 +15101,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.915 65.405 0)
+			(at 210.82 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14783,7 +15110,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 208.915 59.055 0)
+			(at 210.82 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14820,7 +15147,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 193.675 59.055 0)
+		(at 195.58 59.69 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -14829,7 +15156,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d018f")
 		(property "Reference" "SW19"
-			(at 193.675 59.055 0)
+			(at 195.58 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14837,7 +15164,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 193.675 52.0954 0)
+			(at 195.58 52.7304 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14845,8 +15172,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 193.675 52.705 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 195.58 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14855,7 +15182,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.675 52.705 0)
+			(at 195.58 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14864,7 +15191,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 193.675 59.055 0)
+			(at 195.58 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14901,7 +15228,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 269.875 47.625 180)
+		(at 271.78 48.26 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14909,7 +15236,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d0195")
 		(property "Reference" "SW18"
-			(at 269.875 47.625 0)
+			(at 271.78 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14917,7 +15244,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 269.875 54.5846 0)
+			(at 271.78 55.2196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14925,8 +15252,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 269.875 53.975 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 271.78 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14935,7 +15262,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 269.875 53.975 0)
+			(at 271.78 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14944,7 +15271,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 269.875 47.625 0)
+			(at 271.78 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14981,7 +15308,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 254.635 47.625 0)
+		(at 256.54 48.26 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -14990,7 +15317,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d019b")
 		(property "Reference" "SW17"
-			(at 255.27 47.625 0)
+			(at 257.175 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14998,7 +15325,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 254.635 40.6654 0)
+			(at 256.54 41.3004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15006,8 +15333,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 254.635 41.275 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 256.54 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15016,7 +15343,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254.635 41.275 0)
+			(at 256.54 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15025,7 +15352,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 254.635 47.625 0)
+			(at 256.54 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15062,7 +15389,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 239.395 47.625 180)
+		(at 241.3 48.26 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15070,7 +15397,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d01a1")
 		(property "Reference" "SW16"
-			(at 239.395 47.625 0)
+			(at 241.3 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15078,7 +15405,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 239.395 54.5846 0)
+			(at 241.3 55.2196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15086,8 +15413,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 239.395 53.975 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 241.3 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15096,7 +15423,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 239.395 53.975 0)
+			(at 241.3 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15105,7 +15432,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 239.395 47.625 0)
+			(at 241.3 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15142,7 +15469,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 224.155 47.625 0)
+		(at 226.06 48.26 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -15151,7 +15478,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d01a7")
 		(property "Reference" "SW15"
-			(at 224.155 47.625 0)
+			(at 226.06 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15159,7 +15486,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 224.155 40.6654 0)
+			(at 226.06 41.3004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15167,8 +15494,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 224.155 41.275 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 226.06 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15177,7 +15504,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.155 41.275 0)
+			(at 226.06 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15186,7 +15513,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 224.155 47.625 0)
+			(at 226.06 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15223,7 +15550,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 208.915 47.625 180)
+		(at 210.82 48.26 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15231,7 +15558,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d01ad")
 		(property "Reference" "SW14"
-			(at 208.915 47.625 0)
+			(at 210.82 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15239,7 +15566,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 208.915 54.5846 0)
+			(at 210.82 55.2196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15247,8 +15574,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 208.915 53.975 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 210.82 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15257,7 +15584,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.915 53.975 0)
+			(at 210.82 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15266,7 +15593,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 208.915 47.625 0)
+			(at 210.82 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15303,7 +15630,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 193.675 47.625 0)
+		(at 195.58 48.26 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -15312,7 +15639,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d01b3")
 		(property "Reference" "SW13"
-			(at 193.675 47.625 0)
+			(at 195.58 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15320,7 +15647,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 193.675 40.6654 0)
+			(at 195.58 41.3004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15328,8 +15655,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 193.675 41.275 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 195.58 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15338,7 +15665,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.675 41.275 0)
+			(at 195.58 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15347,7 +15674,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 193.675 47.625 0)
+			(at 195.58 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15384,7 +15711,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 224.155 70.485 0)
+		(at 226.06 71.12 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -15393,7 +15720,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d72a9")
 		(property "Reference" "SW29"
-			(at 224.155 70.485 0)
+			(at 226.06 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15401,7 +15728,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 224.155 63.5254 0)
+			(at 226.06 64.1604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15409,8 +15736,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 224.155 64.135 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 226.06 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15419,7 +15746,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.155 64.135 0)
+			(at 226.06 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15428,7 +15755,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 224.155 70.485 0)
+			(at 226.06 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15465,7 +15792,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 208.915 70.485 180)
+		(at 210.82 71.12 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15473,7 +15800,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d72af")
 		(property "Reference" "SW28"
-			(at 208.915 70.485 0)
+			(at 210.82 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15481,7 +15808,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 208.915 77.4446 0)
+			(at 210.82 78.0796 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15489,8 +15816,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 208.915 76.835 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 210.82 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15499,7 +15826,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.915 76.835 0)
+			(at 210.82 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15508,7 +15835,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 208.915 70.485 0)
+			(at 210.82 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15545,7 +15872,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 193.675 70.485 0)
+		(at 195.58 71.12 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -15554,7 +15881,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d72b5")
 		(property "Reference" "SW27"
-			(at 193.675 69.85 0)
+			(at 195.58 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15562,7 +15889,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 193.675 63.5254 0)
+			(at 195.58 64.1604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15570,8 +15897,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 193.675 64.135 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 195.58 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15580,7 +15907,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.675 64.135 0)
+			(at 195.58 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15589,7 +15916,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 193.675 70.485 0)
+			(at 195.58 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15626,7 +15953,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 179.705 70.485 0)
+		(at 171.45 71.12 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -15635,7 +15962,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d72bb")
 		(property "Reference" "SW26"
-			(at 179.705 70.485 0)
+			(at 171.45 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15643,7 +15970,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 179.705 63.5254 0)
+			(at 171.45 64.1604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15651,8 +15978,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 179.705 64.135 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 171.45 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15661,7 +15988,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.705 64.135 0)
+			(at 171.45 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15670,7 +15997,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 179.705 70.485 0)
+			(at 171.45 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15707,7 +16034,7 @@
 	)
 	(symbol
 		(lib_id "SofleKeyboard:SW_PUSH_LED")
-		(at 239.395 70.485 180)
+		(at 241.3 71.12 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15715,7 +16042,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f7d72c1")
 		(property "Reference" "SW30"
-			(at 239.395 70.485 0)
+			(at 241.3 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15723,7 +16050,7 @@
 			)
 		)
 		(property "Value" "SW_PUSH_LED"
-			(at 239.395 77.4446 0)
+			(at 241.3 78.0796 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15731,8 +16058,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE"
-			(at 239.395 76.835 0)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_with_cutouts"
+			(at 241.3 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15741,7 +16068,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 239.395 76.835 0)
+			(at 241.3 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15750,7 +16077,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 239.395 70.485 0)
+			(at 241.3 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15787,7 +16114,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 229.235 56.515 0)
+		(at 231.14 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15795,7 +16122,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000604393f0")
 		(property "Reference" "#PWR0104"
-			(at 229.235 60.325 0)
+			(at 231.14 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15804,7 +16131,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 229.616 52.1208 0)
+			(at 231.521 52.7558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15812,7 +16139,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 229.235 56.515 0)
+			(at 231.14 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15821,7 +16148,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.235 56.515 0)
+			(at 231.14 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15830,7 +16157,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 229.235 56.515 0)
+			(at 231.14 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15845,6 +16172,85 @@
 			(project "SofleKeyboard"
 				(path "/46c21927-1b41-44f4-a5c5-3120e2caa955"
 					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SofleKeyboard:SW_PUSH_LED")
+		(at 167.64 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15302899-cc74-4245-8392-ccc88644ec0d")
+		(property "Reference" "SW25"
+			(at 167.64 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PUSH_LED"
+			(at 167.64 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_alt_pads_w_cutouts"
+			(at 167.64 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 167.64 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "2667230e-eb56-4cf3-a87a-77145ca9d7b0")
+		)
+		(pin "6"
+			(uuid "d4a4528b-0c85-4f9a-ac0b-023b2f107e1c")
+		)
+		(pin "1"
+			(uuid "1b49ca42-32f9-446f-9452-652ba3aca1a1")
+		)
+		(pin "2"
+			(uuid "56d4bd91-3a4c-4227-8063-13a3c19cc70e")
+		)
+		(pin "3"
+			(uuid "646df12b-774c-4a7f-a078-89b71c438684")
+		)
+		(pin "4"
+			(uuid "61f26f6d-01c1-44ce-aeb9-9c90045fb196")
+		)
+		(instances
+			(project "SofleKeyboard"
+				(path "/46c21927-1b41-44f4-a5c5-3120e2caa955"
+					(reference "SW25")
 					(unit 1)
 				)
 			)
@@ -16070,18 +16476,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_3_Bridged12")
-		(at 87.63 138.43 90)
-		(mirror x)
+		(lib_id "Jumper:Jumper_3_Open")
+		(at 114.3 137.16 90)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "60555119-3091-4bc4-a88d-e115af64afba")
-		(property "Reference" "JP17"
-			(at 85.09 137.1599 90)
+		(uuid "5321b0a1-1ba4-4556-93f4-c6b5db99d994")
+		(property "Reference" "JP19"
+			(at 111.76 136.144 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16089,8 +16493,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Jumper_3_Bridged12"
-			(at 85.09 139.6999 90)
+		(property "Value" "RGB PIN"
+			(at 111.76 138.176 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16098,8 +16502,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 87.63 138.43 0)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 114.3 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16108,7 +16512,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 87.63 138.43 0)
+			(at 114.3 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16116,28 +16520,28 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Jumper, 3-pole, pins 1+2 closed/bridged"
-			(at 87.63 138.43 0)
+		(property "Description" "Jumper, 3-pole, both open"
+			(at 114.3 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "aa466f25-1b99-4ed3-a379-fea89b84586b")
-		)
-		(pin "3"
-			(uuid "e801665a-bb38-4459-b04d-ce5612b0dd70")
 		)
 		(pin "2"
-			(uuid "81e3f634-8ce1-4947-a80b-a8e77af939b6")
+			(uuid "ca5aae81-5cd5-4d9c-9063-9698a9c66962")
+		)
+		(pin "1"
+			(uuid "e4f8dbce-619d-4f32-84f5-88e090f92388")
+		)
+		(pin "3"
+			(uuid "63c6d431-67ca-49f4-936e-02953e10d576")
 		)
 		(instances
 			(project "SofleKeyboard"
 				(path "/46c21927-1b41-44f4-a5c5-3120e2caa955"
-					(reference "JP17")
+					(reference "JP19")
 					(unit 1)
 				)
 			)
@@ -16430,6 +16834,155 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:Jumper_2_Bridged")
+		(at 181.61 66.04 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84400f96-aac3-489b-b4d4-0ccdd6bc85ed")
+		(property "Reference" "JP17"
+			(at 181.61 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW25 RGB"
+			(at 181.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 181.61 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, closed/bridged"
+			(at 181.61 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4061ed3b-eeb2-4511-8d9b-bf606e526d7c")
+		)
+		(pin "2"
+			(uuid "73a5beb4-a073-413f-b62f-ae9e08b68304")
+		)
+		(instances
+			(project ""
+				(path "/46c21927-1b41-44f4-a5c5-3120e2caa955"
+					(reference "JP17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SofleKeyboard:SW_PUSH_LED")
+		(at 171.45 59.69 0)
+		(mirror y)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "90e309ee-2d35-462f-9fab-3fbe5a199e41")
+		(property "Reference" "SW25"
+			(at 171.45 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PUSH_LED"
+			(at 171.45 52.7304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SofleChoc:Choc_Hotswap_SK6812MiniE_alt_pads_w_cutouts"
+			(at 171.45 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 171.45 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "aacc08bf-755c-49fe-83b9-98019d50c262")
+		)
+		(pin "6"
+			(uuid "2cc2f010-1a7d-4d4b-b637-1c0672e68127")
+		)
+		(pin "1"
+			(uuid "09ab9368-1486-43f6-88d8-3527fbb08610")
+		)
+		(pin "2"
+			(uuid "d545cf4c-5609-44fa-8419-046f166cdd5e")
+		)
+		(pin "3"
+			(uuid "25b9a33d-a8b8-4fbe-92ed-e7bd9331207a")
+		)
+		(pin "4"
+			(uuid "96d1c1a1-867e-424b-90d5-59aaa2a0146f")
+		)
+		(instances
+			(project "SofleKeyboard"
+				(path "/46c21927-1b41-44f4-a5c5-3120e2caa955"
+					(reference "SW25")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SofleKeyboard-rescue:Jumper_NO_Small-Device")
 		(at 77.216 113.792 0)
 		(unit 1)
@@ -16600,7 +17153,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+		(property "Footprint" "SofleChoc:PinHeader_1x01_P2.54mm_Vertical_B-"
 			(at 30.988 140.208 0)
 			(effects
 				(font
@@ -16664,7 +17217,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SofleChoc:niceview_5Pin"
+		(property "Footprint" "SofleChoc:niceview_5Pin_with_cutouts"
 			(at 55.6615 109.728 0)
 			(effects
 				(font
@@ -16785,6 +17338,79 @@
 			(project "SofleKeyboard"
 				(path "/46c21927-1b41-44f4-a5c5-3120e2caa955"
 					(reference "SW32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_3_Open")
+		(at 88.9 137.16 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "c0c0e12a-5c0f-419b-a3bb-b91243a91e93")
+		(property "Reference" "JP18"
+			(at 86.36 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RGB PIN"
+			(at 86.36 138.176 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 88.9 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 88.9 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 3-pole, both open"
+			(at 88.9 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ef576461-3130-4e7d-8a34-0bbbfd32da90")
+		)
+		(pin "1"
+			(uuid "b28903cb-1fc8-408b-8c48-007a3732a84c")
+		)
+		(pin "3"
+			(uuid "5d1a4fa1-0d74-4ae2-9909-983165245ac2")
+		)
+		(instances
+			(project ""
+				(path "/46c21927-1b41-44f4-a5c5-3120e2caa955"
+					(reference "JP18")
 					(unit 1)
 				)
 			)
@@ -17109,7 +17735,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+		(property "Footprint" "SofleChoc:PinHeader_1x01_P2.54mm_Vertical_B+"
 			(at 30.988 132.588 0)
 			(effects
 				(font

@@ -59,9 +59,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "courtyards_overlap|91650001|72800001|2d9640b5-88f4-4622-b7e1-17e68d579be2|0d9ac584-d0ca-495c-83f3-febff92d8a9e"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -83,6 +81,7 @@
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -538,17 +537,18 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../../Gerbers/Choc_v3/",
+      "plot": "../../Gerbers/Choc_v3/Choc-v3-pcb/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
-      "svg": "",
+      "svg": "/home/error/temp/",
       "vrml": ""
     },
     "page_layout_descr_file": ""
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
